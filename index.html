@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socjalistyczna Tarchominia Ludowa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header .flag-container {
+            display: inline-block;
+            background-color: white; /* Tło wokół flagi */
+            width: 30%; /* Zmniejszona szerokość tła */
+            height: auto;
+            border-radius: 20px; /* Zaokrąglone rogi */
+            margin-bottom: 20px; /* Przestrzeń poniżej flagi */
+            padding: 3%; /* Padding wokół flagi */
+        }
+        header img {
+            width: 100%; /* Flaga zajmuje 100% szerokości kontenera */
+            height: auto;
+            border-radius: 15px; /* Zaokrąglone rogi samej flagi */
+        }
+        nav {
+            background-color: #b71c1c;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .audio-button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px; /* Zaokrąglone rogi przycisku */
+        }
+        .audio-button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Kontener z flagą -->
+        <div class="flag-container">
+            <img src="flaga.png" alt="Flaga STL">
+        </div>
+        <h1>dołącz do mikronacji: SOCJALISTYCZNA TARCHOMINIA LUDOWA</h1>
+        <p>Wolność, równość, braterstwo</p>
+    </header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#wladza">Władza</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <main>
+        <section id="historia">
+            <h2>Historia STL</h2>
+            <p>Zaczeło się od zwykłego kijia.</p>
+        </section>
+        <section id="wladza">
+            <h2>Struktura Władzy</h2>
+            <p>STL jest zarządzana w systemie komunistycznym, gdzie każda decyzja służy dobru wspólnemu. 
+               Obecnym liderem jest Fekson Kopczyniakow, którego wizja kieruje narodem ku lepszej przyszłości.</p>
+        </section>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Aby dołączyć do STL lub uzyskać więcej informacji, skontaktuj się z nami poprzez e-mail: <strong>mikronacjaSTL@mail.com</strong>.</p>
+        </section>
+        
+        <!-- Przycisk do odtwarzania Międzynarodówki -->
+        <button class="audio-button" onclick="playSong()">Odtwórz Międzynarodówkę</button>
+        <audio id="miedzynarodowka-audio" src="assets/miedzynarodowka.mp3" preload="auto"></audio>
+    </main>
+    <footer>
+        <p>&copy; 2024 Socjalistyczna Tarchominia Ludowa</p>
+    </footer>
+
+           <!-- Przycisk do odtwarzania Międzynarodówki -->
+        <button class="audio-button" onclick="playSong()">Odtwórz Międzynarodówkę</button>
+        <audio id="miedzynarodowka-audio" src="assets/miedzynarodowka.mp3" preload="auto"></audio>
+    </main>
+    <footer>
+        <p>&copy; 2024 Socjalistyczna Tarchominia Ludowa</p>
+    </footer>
+
+    <script>
+        function playSong() {
+            var audio = document.getElementById("miedzynarodowka-audio");
+            audio.play();
+        }
+        }
+    </script>
+</body>
+</html>
+
