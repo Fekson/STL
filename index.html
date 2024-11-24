@@ -111,8 +111,7 @@
         </section>
 
 
-
-        <div style="text-align: center; margin: 20px;">
+<div style="text-align: center; margin: 20px;">
     <a class="link-button" href="https://fekson.github.io/STL/miedzynarodowka.mp3" target="_blank">Odtwórz Międzynarodówkę</a>
 </div>
 
@@ -148,7 +147,7 @@
         }
     }
 
-    /* Poprawki dla marginesu na dole strony, żeby przycisk nie nachodził na stopkę */
+    /* Styl dla stopki z mniejszym napisem */
     footer {
         background-color: #c62828;
         color: white;
@@ -157,7 +156,10 @@
         position: relative;
         width: 100%;
         bottom: 0;
-        margin-top: 60px; /* Dodanie odstępu między przyciskiem a stopką */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Zmniejszenie rozmiaru czcionki */
     }
 </style>
 
@@ -165,17 +167,6 @@
     <p>&copy; 2024 Socjalistyczna Tarchominia Ludowa</p>
 </footer>
 
-
-        
-        
-    </main>
-    <footer>
-        <p>&copy; 2024 Socjalistyczna Tarchominia Ludowa</p>
-    </footer>
-
-    <footer>
-        <p>&copy; 2024 Socjalistyczna Tarchominia Ludowa</p>
-    </footer>
 
     <script>
         function playSong() {
